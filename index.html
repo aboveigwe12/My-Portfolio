@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: cursive; 
+      font-weight: 500;
+      box-sizing: border-box;
+    }
+
+    body{ 
+      background:url(./assets/Welcome\ Scan.jpg);
+      color: #fff;
+    }
+
+    .head{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .logo{
+      color: #fff;
+      text-decoration: none;
+      cursor: default;
+      font-size: 25px;
+    }
+
+    .Home{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 70px 10% 0;
+    }
+
+    .div{
+      max-width: 600px;
+    }
+
+    .div h3{
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .div h1{
+      font-size: 56px;
+      font-weight: 700;
+    }
+
+    .div h3 span{
+      color: #0ef;
+    }
+
+    .home-img img{
+      max-width: 450px;
+      border-radius: 2px;
+      animation-delay: 2s,3s;
+      opacity:1;
+      border-radius: 5px;
+      margin-right: -20px;
+      animation: zoomin 1s ease forwards, floatimage 4s ease-in-out infinite;
+    }
+
+    #Projects{
+      text-decoration: none;
+      text-align: center;
+    }
+
+    @keyframes floatimage{
+        0%{
+          transform: translateY(0);
+        }
+
+        50%{
+          transform: translateY(-24px);
+        }
+
+        100%{
+          transform: translateY(0);
+        }
+      }
+  </style>
+</head>
+<body>
+  <header  class="head">
+    <a href="#" class="logo">Portfolio</a>
+  </header>
+
+  <section class="Home">
+    <div class="div">
+      <h3>Hello it's me</h3>
+      <h1>Igwe Above</h1>
+      <h3>And I'm a <span>Frontend Developer</span></h3>
+    </div>
+    <div class="home-img">
+      <img src="./assets/IMG_20210715_115112_890.jpg" alt="me">
+     </div>
+  </section>
+
+<section id="Projects">
+  <p> My Projects</p><br>
+  <ol>
+   <a href="./assets/5.4 Color Vocab Project/index.html">COLOR VOCAB PRATICE</a> <br>
+   <img src="./assets/image.png" alt="color vocab pratice"> <br>
+   <a href="./assets/3.4 Birthday Invite Project/index.html"> BIRTHDAY INVITE PROJECT</a> <br>
+    <img src="./assets/3.4 Birthday Invite Project/image.png" alt="2"> <br>
+   <a href="./assets/6.1CSS Properties/index.html">ADDING CSS</a> <br>
+    <img src="./assets/6.1CSS Properties/image.png" alt="3"> <br>
+   <a href="./assets/2.4 Movie Ranking Project/index.html">MOVIE RANKING PROJECT</a> <br>
+   <img src="./assets/2.4 Movie Ranking Project/image.png" alt="4"> <br>
+  </ol>
+
+</section>
+
+</body>
+</html> 
